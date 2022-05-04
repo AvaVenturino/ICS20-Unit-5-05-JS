@@ -26,7 +26,7 @@ function myButtonClicked() {
     document.getElementById("answer").innerHTML= "This is an equilateral triangle!"
   } else if ((sideA == sideB) || (sideB == sideC) || (sideA == sideC)) {
         document.getElementById("answer").innerHTML= "This is an isosceles triangle!"
-  } else (sideA <> sideB && sideB <> sideC) {
+  } else {
       document.getElementById("answer").innerHTML= "This is a scalene triangle!"
   }
 }
