@@ -22,11 +22,11 @@ function myButtonClicked() {
   var sideC = document.getElementById("sideC").value
 
   // process
-  if (sideA == sideB && sideB == sideC) {  {
+  if (sideA == sideB && sideB == sideC) {
     document.getElementById("answer").innerHTML= "This is an equilateral triangle!"
-  } else if (sideA == sideC) {
+  } else if ((sideA == sideB) || (sideB == sideC) || (sideA == sideC)) {
         document.getElementById("answer").innerHTML= "This is an isosceles triangle!"
-  } else {
-      document.getElementById("answer").innerHTML= "This is a scalene triangle! "
+  } else (sideA <> sideB && sideB <> sideC) {
+      document.getElementById("answer").innerHTML= "This is a scalene triangle!"
   }
 }
