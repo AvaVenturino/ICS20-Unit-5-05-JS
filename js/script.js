@@ -10,16 +10,16 @@
 if (navigator.serviceWorker) {
   navigator.serviceWorker.register("/ICS20-Unit-5-04-JS/sw.js", {
     scope: "/ICS20-Unit-5-04-JS/",
-  })
+  });
 }
 
 /**
  * Input
  */
 function myButtonClicked() {
-  var sideA = document.getElementById("sideA").value
-  var sideB = document.getElementById("sideB").value
-  var sideC = document.getElementById("sideC").value
+  var sideA = document.getElementById("sideA").value;
+  var sideB = document.getElementById("sideB").value;
+  var sideC = document.getElementById("sideC").value;
 
   // process
   if (sideA == sideB && sideB == sideC) {
