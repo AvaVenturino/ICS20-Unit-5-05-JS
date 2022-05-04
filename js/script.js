@@ -17,13 +17,16 @@ if (navigator.serviceWorker) {
  * Input
  */
 function myButtonClicked() {
-  var day = document.getElementById("day").value
-  var age = document.getElementById("age").value
+  var sideA = document.getElementById("sideA").value
+  var sideB = document.getElementById("sideB").value
+  var sideC = document.getElementById("sideC").value
 
   // process
-  if (( day == "tuesday" || day == "thursday") || (age > 12 && age < 21)) {
-      document.getElementById("answer").innerHTML= "You're eligible for student pricing"
+  if (sideA == sideB == sideC)  {
+    document.getElementById("answer").innerHTML= "This is an equilateral triangle!"
+  } else if (sideA == sideC) {
+        document.getElementById("answer").innerHTML= "This is an isosceles triangle!"
   } else {
-      document.getElementById("answer").innerHTML= "You must pay regular price"
+      document.getElementById("answer").innerHTML= "This is a scalene triangle! "
   }
 }
