@@ -23,15 +23,13 @@ function myButtonClicked() {
 
   // process
   if (sideA == sideB && sideB == sideC) {
-     document.getElementById("answer").innerHTML =
-     "This is an equilateral triangle!";
-    
+    document.getElementById("answer").innerHTML =
+      "This is an equilateral triangle!";
   } else if (sideA == sideB || sideB == sideC || sideA == sideC) {
-     document.getElementById("answer").innerHTML =
+    document.getElementById("answer").innerHTML =
       "This is an isosceles triangle!";
-    
   } else {
-     document.getElementById("answer").innerHTML =
+    document.getElementById("answer").innerHTML =
       "This is a scalene triangle!";
   }
 }
