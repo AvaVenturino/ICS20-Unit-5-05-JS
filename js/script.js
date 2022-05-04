@@ -22,7 +22,7 @@ function myButtonClicked() {
   var sideC = document.getElementById("sideC").value
 
   // process
-  if (sideA == sideB == sideC)  {
+  if (sideA == sideB && sideB == sideC) {  {
     document.getElementById("answer").innerHTML= "This is an equilateral triangle!"
   } else if (sideA == sideC) {
         document.getElementById("answer").innerHTML= "This is an isosceles triangle!"
